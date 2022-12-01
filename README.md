@@ -1,1 +1,5 @@
 # HTML.CSS_Templates
+
+Here I upload some simple web page templates that I created.
+
+Template 1: Simple Business Web Page
