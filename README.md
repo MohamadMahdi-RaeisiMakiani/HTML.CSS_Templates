@@ -2,4 +2,4 @@
 
 Here I upload some simple web page templates that I created.
 
-Template 1: Simple Business Web Page
+Template 1: Simple Business Web Page (Responsive By FlexBox)
