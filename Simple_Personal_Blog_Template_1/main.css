@@ -1,0 +1,167 @@
+body {
+	background: url("../PageFiles_/_PageImages_/naturePic_2.jpg") no-repeat
+		center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	/* -webkit -> Chrome, Safari
+	-moz -> Firefox
+	-o -> Opera
+	-ms -> IE
+	background-color
+	background-image
+	background-repeat
+	background-attachment
+	background-position
+	background (shorthand property) */
+}
+
+#hdrsec1 {
+	width: 59%;
+	text-align: center;
+	background-image: linear-gradient(to right, lightblue, purple);
+	margin: 0px 5px;
+	height: 103px;
+	opacity: 60%;
+	transition: all 0.5s ease;
+}
+
+#hdrsec1:hover {
+	opacity: 100%;
+}
+
+#hdrasd1 {
+	width: 20%;
+	text-align: center;
+	height: 103px;
+	background-color: #b0d2d3;
+	transition: all 0.5s ease;
+	opacity: 60%;
+	margin-bottom: 15px;
+	float: left;
+	/* position: fixed;
+	top: 0px;
+	right: 0px; */
+}
+
+#hdrasd1:hover {
+	opacity: 100%;
+}
+
+.hdrelmnts:not(#hdrasd1) {
+	float: left;
+	clear: right;
+}
+
+#testMenuBar {
+	outline: 1px solid black;
+	width: 20%;
+}
+
+.testMenuLinks {
+	text-align: center;
+	display: block;
+	color: #ea5858;
+	text-decoration: none;
+	background-color: #b0d2d3;
+	font-size: 16pt;
+	transition: all 0.5s ease;
+	opacity: 60%;
+}
+.testMenuLinks:hover {
+	font-size: 22pt;
+	opacity: 100%;
+	color: green;
+}
+
+.testMenuLinks:first-child {
+	border-bottom: 1px solid black;
+}
+
+.testMenuLinks:last-child {
+	border-top: 1px solid black;
+}
+.testMenuLinks:nth-child(2) {
+	border-bottom: 1px solid black;
+}
+
+#mainsidebarleft,
+#mainsidebarright {
+	width: 20%;
+	background-color: #b0d2d390;
+	transition: all 0.5s ease;
+	border-radius: 20px;
+}
+
+#mainsidebarleft p,
+#mainsidebarright p {
+	color: darkviolet;
+	text-align: center;
+	font-size: 24pt;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	margin: 10px 10px;
+}
+
+#mainsidebarleft:hover,
+#mainsidebarright:hover {
+	box-shadow: black 3px 3px 5px;
+	background-color: #b0d2d3;
+	/* border: 1px solid black; */
+}
+
+#mainarticle-content {
+	width: 59%;
+	margin: 0px 5px;
+	border-radius: 20px;
+}
+
+#mainsidebarright {
+	width: 20%;
+	float: right;
+	border-radius: 20px;
+}
+
+.main-content-elements {
+	float: left;
+	clear: right;
+}
+
+#benLinks-ulist li a {
+	color: black;
+	text-decoration: none;
+	font-size: 16pt;
+}
+
+#benLinks-ulist li a:hover,
+#archive-ulist li a:hover {
+	text-shadow: 2px 2px 4px darkviolet;
+}
+
+#benLinks-ulist li {
+	margin-bottom: 20px;
+}
+
+#archive-ulist {
+	list-style-type: none;
+}
+
+#archive-ulist li a {
+	color: black;
+	text-decoration: none;
+	font-size: 16pt;
+}
+
+#mainarticle-content {
+	background-color: #9400d340;
+	transition: all 1s ease;
+}
+
+#mainarticle-content:hover {
+	background-color: #f0d4fc;
+}
+
+/* overflow: hidden; */
+/* background-color: rgba(255, 0, 0, 0.4); */
+/* background-color: #ea585870; ===> 70 at last means opacity 70% */

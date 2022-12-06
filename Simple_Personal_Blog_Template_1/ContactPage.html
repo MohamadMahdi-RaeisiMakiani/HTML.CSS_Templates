@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>userForm</title>
+		<script>
+			document.addEventListener("DOMContentLoaded", function (event) {
+				var priceValue_1 = document.getElementById("price-value-1");
+				document
+					.getElementById("price-range-1")
+					.addEventListener("change", function () {
+						priceValue_1.innerText = "$" + this.value;
+					});
+				document
+					.getElementById("reset-form")
+					.addEventListener("click", function () {
+						priceValue_1.innerText = "$" + "30000";
+					});
+			});
+
+			function cancleClick_func() {
+				alert("You canceled the form request.");
+			}
+			function submitClick_func() {
+				document.getElementById("contact-form").action = "index_4.html";
+				// this.form.action = "index_4.html";
+			}
+		</script>
+		<style>
+			body {
+				background: url("bgimage1.jpg") no-repeat center center fixed;
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+			}
+			#form-box {
+				background-image: linear-gradient(
+					to right,
+					#add8e670,
+					#80008070
+				);
+				width: 50%;
+				margin: 80px auto;
+				border-radius: 25px;
+				box-shadow: pink 10px 10px 10px;
+				transition: all 1s ease;
+			}
+			#form-box label:not(#price-value-1) {
+				float: left;
+				margin-left: 90px;
+				margin-right: 20px;
+			}
+			#form-box input:not(#form-submit-button, #reset-form),
+			#price-value-1 {
+				float: right;
+				width: 200px;
+				margin-right: 90px;
+			}
+			#form-box:hover {
+				background-image: linear-gradient(to right, #add8e6, #800080);
+				box-shadow: none;
+			}
+			#endButton-box {
+				text-align: center;
+			}
+			.myAll-buttons {
+				border: none;
+				border-radius: 25px;
+				margin: 0px 5px;
+				width: 80px;
+				transition: all 0.5s ease;
+			}
+			.myAll-buttons:hover {
+				background-color: hotpink;
+				box-shadow: lightskyblue 3px 3px 5px;
+			}
+		</style>
+	</head>
+	<body>
+		<main>
+			<form id="contact-form">
+				<div id="form-box">
+					<h2 style="padding-top: 45px; text-align: center">
+						Contact Form
+					</h2>
+					<!-- <fieldset> -->
+					<!-- <legend align="center">ContactForm</legend> -->
+					<label for="gender-selection">Enter Your Gender: </label>
+					<input list="Gender" id="gender-selection" />
+					<datalist id="Gender">
+						<option value="Male"></option>
+						<option value="Female"></option>
+						<option value="Unknowns"></option>
+					</datalist>
+					<br /><br />
+					<label for="color-picker">Select a color: </label>
+					<input
+						id="color-picker"
+						type="color"
+						name="colorSelector"
+						value="#b0d2d3"
+					/>
+					<br /><br />
+					<label for="select-datetime">Request dateline: </label>
+					<input id="select-datetime" type="datetime-local" />
+					<br /><br />
+					<label for="week-selector">Select week: </label>
+					<input id="week-selector" type="week" />
+					<br /><br />
+					<label for="time-line">Time of Request: </label>
+					<input id="time-line" type="time" />
+					<br /><br />
+					<label for="website-url"
+						>Enter Your Website Address:
+					</label>
+					<input id="website-url" type="url" />
+					<!-- <label for="problem-type">Enter Your Problem Type: </label> -->
+					<!-- <input
+						id="problem-type"
+						type="text"
+						pattern="/^[A-Z]$/"
+						value="12345"
+						maxlength="7"
+					/> -->
+					<br /><br />
+					<label for="price-range-1"
+						>Enter Your Proposed Price:
+					</label>
+					<input
+						type="range"
+						id="price-range-1"
+						min="0"
+						max="150000"
+						step="1000"
+						value="30000"
+					/>
+					<!-- <span id="price-value-1">$30000</span> -->
+					<br /><br />
+					<label id="price-value-1">$30000</label>
+					<br /><br />
+					<div id="endButton-box">
+						<input
+							class="myAll-buttons"
+							id="form-submit-button"
+							type="submit"
+							value="Send"
+							onclick="submitClick_func()"
+						/>
+						<button
+							class="myAll-buttons"
+							onclick="cancleClick_func()"
+						>
+							Cancle
+						</button>
+						<input
+							class="myAll-buttons"
+							id="reset-form"
+							type="reset"
+							value="Clear"
+						/>
+					</div>
+					<p style="text-align: center; padding-bottom: 45px">
+						Copyright 2022 by Programmer
+					</p>
+					<!-- </fieldset> -->
+				</div>
+			</form>
+		</main>
+	</body>
+</html>
+
+<!-- RangeUnderflow -->
+<!-- <input type="range" min="3" max="5" value="0" /> -->
+<!-- RangeOverflow -->
+<!-- <input type="range" min="3" max="5" value="7" /> -->
+<!-- Error -->
+<!-- <input type="range" min="5" max="20" step="5" value="8" /> -->
+<!-- <form action=""></form> -->
+<!-- box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; box-shadow: rgba(0, 0, 0, 0.24)
+0px 3px 8px; -->
