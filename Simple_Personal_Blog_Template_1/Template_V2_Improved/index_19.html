@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>TestPage_4_Improved</title>
+		<link rel="stylesheet" href="main_19.css" />
+		<script defer>
+			document.addEventListener("DOMContentLoaded", function () {
+				let mainContent_Selector = document.querySelector(
+					"#mainarticle-content"
+				);
+				var mainContent_Height = getComputedStyle(
+					mainContent_Selector,
+					null
+				).height;
+				var changeRight_Height =
+					document.getElementById("mainsidebarright");
+				changeRight_Height.style.height = mainContent_Height;
+
+				var changeLeft_Height =
+					document.getElementById("mainsidebarleft");
+				changeLeft_Height.style.height = mainContent_Height;
+
+				let heightValueGetter =
+					parseInt(mainContent_Height.split("px")[0]) + 96 + "px";
+
+				let changeArticle_Height =
+					document.getElementById("mainArticleAll");
+				changeArticle_Height.style.height = heightValueGetter;
+			});
+			setInterval(function () {
+				let gettingMainContentHeight = window.getComputedStyle(
+					document.getElementById("mainarticle-content"),
+					null
+				).height;
+				console.log(gettingMainContentHeight);
+
+				let rightSideSelection =
+					document.getElementById("mainsidebarright");
+				rightSideSelection.style.height = gettingMainContentHeight;
+
+				let leftSideSelection =
+					document.getElementById("mainsidebarleft");
+				leftSideSelection.style.height = gettingMainContentHeight;
+			}, 2000);
+		</script>
+	</head>
+	<body>
+		<main>
+			<header>
+				<nav id="testMenuBar" class="hdrelmnts">
+					<a href="./index_19.html" class="testMenuLinks">Home</a>
+					<a href="#" class="testMenuLinks">Articles</a>
+					<a href="index_about.html" class="testMenuLinks">About</a>
+					<a href="ContactPage.html" class="testMenuLinks">Contact</a>
+				</nav>
+				<section class="hdrelmnts" id="hdrsec1">
+					<h1 id="header-title">
+						Welcome to the SantLou Sky! We are here to give you many
+						articles about sky and Astronomy research.
+					</h1>
+				</section>
+				<aside class="hdrelmnts" id="hdrasd1">
+					<p id="searchBox-text">
+						Let's find important articles and research results in
+						the field of Astronomy.
+					</p>
+					<form id="srchfrm1">
+						<input
+							type="search"
+							placeholder="Enter the article name"
+							id="inptsrch1"
+						/>
+						<input type="button" value="Search" id="inptsrchbtn1" />
+					</form>
+				</aside>
+			</header>
+			<article id="mainArticleAll">
+				<aside class="main-content-elements" id="mainsidebarleft">
+					<p>Beneficial Likns</p>
+					<ul id="benLinks-ulist">
+						<li><a href="https://www.sky.com/">Sky.com</a></li>
+						<li>
+							<a href="https://www.thenightsky.com/"
+								>TheNightSky</a
+							>
+						</li>
+						<li>
+							<a href="https://skyandtelescope.org/"
+								>SkyAndTelescope</a
+							>
+						</li>
+						<li>
+							<a href="https://astronomy.com/">Astronomy.com</a>
+						</li>
+						<li><a href="http://www.sky-map.org/">SkyMap</a></li>
+					</ul>
+				</aside>
+				<section class="main-content-elements" id="mainarticle-content">
+					<div>
+						<p class="article-titles">Moon</p>
+						<p class="article-textContent">
+							The Moon is Earth's only natural satellite. At about
+							one-quarter the diameter of Earth (comparable to the
+							width of Australia),[16] it is the fifth largest
+							satellite in the Solar System, the largest satellite
+							in the Solar System relative to its major planet,[f]
+							and larger than any known dwarf planet. The Moon is
+							a planetary-mass object that formed a differentiated
+							rocky body, making it a satellite planet under the
+							geophysical definitions of the term.[17] It lacks
+							any significant atmosphere, hydrosphere, or magnetic
+							field. Its surface gravity is about one-sixth of
+							Earth's (0.1654 g). Jupiter's moon Io is the only
+							satellite in the Solar System known to have a higher
+							surface gravity and density. Orbiting Earth at an
+							average distance of 384,400 km (238,900 mi), or
+							about 30 times Earth's diameter, its gravitational
+							influence very slowly lengthens Earth's day and is
+							the main driver of Earth's tides. The Moon's orbit
+							around Earth has a sidereal period of 27.3 days.
+							During each synodic period of 29.5 days, the amount
+							of visible surface illuminated by the Sun varies
+							from none up to 100%, resulting in lunar phases that
+							form the basis for the months of a lunar calendar.
+							The Moon is tidally locked to Earth, which means
+							that the length of a full rotation of the Moon on
+							its own axis causes its same side (the near side) to
+							always face Earth, and the somewhat longer lunar day
+							is the same as the synodic period. That said, 59% of
+							the total lunar surface can be seen from Earth
+							through shifts in perspective due to libration. The
+							most widely accepted origin explanation posits that
+							the Moon formed 4.51 billion years ago, not long
+							after Earth, out of the debris from a giant impact
+							between the planet and a hypothesized Mars-sized
+							body called Theia. It then receded to a wider orbit
+							because of tidal interaction with the Earth. The
+							near side of the Moon is marked by dark volcanic
+							maria ("seas"), which fill the spaces between bright
+							ancient crustal highlands and prominent impact
+							craters. Most of the large impact basins and mare
+							surfaces were in place by the end of the Imbrian
+							period, some three billion years ago. The lunar
+							surface is relatively non-reflective, with a
+							reflectance just slightly brighter than that of worn
+							asphalt. However, because it has a large angular
+							diameter, the full moon is the brightest celestial
+							object in the night sky. The Moon's apparent size is
+							nearly the same as that of the Sun, allowing it to
+							cover the Sun almost completely during a total solar
+							eclipse. Both the Moon's prominence in Earth's sky
+							and its regular cycle of phases have provided
+							cultural references and influences for human
+							societies throughout history. Such influences can be
+							found in language, calendar systems, art, and
+							mythology. The first artificial object to reach the
+							Moon was the Soviet Union's Luna 2 uncrewed
+							spacecraft in 1959; this was followed by the first
+							successful soft landing by Luna 9 in 1966. The only
+							human lunar missions to date have been those of the
+							United States' Apollo program, which landed twelve
+							men on the surface between 1969 and 1972. These and
+							later uncrewed missions returned lunar rocks that
+							have been used to develop a detailed geological
+							understanding of the Moon's origins, internal
+							structure, and subsequent history.
+						</p>
+						<p class="article-titles">Mars</p>
+						<p class="article-textContent">
+							Mars is the fourth planet from the Sun and the
+							second-smallest planet in the Solar System, being
+							larger than only Mercury. In English, Mars carries
+							the name of the Roman god of war. Mars is a
+							terrestrial planet with a thin atmosphere, and has a
+							crust primarily composed of elements similar to
+							Earth's crust, as well as a core made of iron and
+							nickel. Mars has surface features such as impact
+							craters, valleys, dunes, and polar ice caps. It also
+							has two small and irregularly shaped moons, Phobos
+							and Deimos. Some of the most notable surface
+							features on Mars include Olympus Mons, the largest
+							volcano and highest known mountain on any Solar
+							System planet, and Valles Marineris, one of the
+							largest canyons in the Solar System. The smooth
+							Borealis basin in the Northern Hemisphere covers 40%
+							of the planet and may be a giant impact feature.[19]
+							The days and seasons on Mars are comparable to those
+							of Earth as the planets have a similar rotation
+							period and tilt of the rotational axis relative to
+							the ecliptic plane. Liquid water on the surface of
+							Mars cannot exist due to low atmospheric pressure,
+							which is less than 1% of the atmospheric pressure on
+							Earth.[20][21] Both of Mars's polar ice caps appear
+							to be made largely of water.[22][23] Multiple lines
+							of evidence suggest that Mars was wetter in the
+							distant past, and thus possibly more suited for
+							life. However, whether life ever did exist there,
+							and if it could have survived to the present day,
+							remain unanswered questions. Mars has been explored
+							by several uncrewed spacecraft, beginning with
+							Mariner 4 in 1965. NASA's Viking 1 lander
+							transmitted the first images from the Martian
+							surface in 1976. Two countries have successfully
+							deployed rovers on Mars, the United States first
+							doing so with Sojourner in 1997 and China with
+							Zhurong in 2021.[24] There are also planned future
+							missions to Mars, such as a Mars sample-return
+							mission set to happen in 2026, and the Rosalind
+							Franklin rover mission, which was intended to launch
+							in 2018 but was delayed to 2024. Mars can easily be
+							seen from Earth with the naked eye, as can its
+							striking reddish coloring. This appearance, due the
+							iron oxide prevalent on its surface, has led to Mars
+							often being called the Red Planet.[25][26] It is
+							among the brightest objects in Earth's sky, with an
+							apparent magnitude that reaches −2.94, comparable to
+							that of Jupiter and surpassed only by Venus, the
+							Moon and the Sun.[14] Historically, Mars has been
+							observed since ancient times, and over the
+							millennia, has been featured in culture and the arts
+							in ways that have reflected humanity's growing
+							knowledge of it.
+						</p>
+					</div>
+				</section>
+				<aside class="main-content-elements" id="mainsidebarright">
+					<p>Articles Archive</p>
+					<ul id="archive-ulist">
+						<li><a href="#">SKYR-1 | 2005/01/15</a></li>
+						<li><a href="#">SKYR-2 | 2005/03/15</a></li>
+						<li><a href="#">SKYR-3 | 2005/06/15</a></li>
+						<li><a href="#">SKYR-4 | 2005/09/15</a></li>
+						<li><a href="#">SKYR-5 | 2005/12/15</a></li>
+						<li><a href="#">SKYR-6 | 2006/01/15</a></li>
+						<li><a href="#">SKYR-7 | 2006/03/15</a></li>
+						<li><a href="#">SKYR-8 | 2006/06/15</a></li>
+						<li><a href="#">SKYR-9 | 2006/09/15</a></li>
+						<li><a href="#">SKYR-10 | 2006/12/15</a></li>
+						<li><a href="#">SKYR-11 | 2007/01/15</a></li>
+						<li><a href="#">SKYR-12 | 2007/03/15</a></li>
+						<li><a href="#">SKYR-13 | 2007/06/15</a></li>
+						<li><a href="#">SKYR-14 | 2007/09/15</a></li>
+						<li><a href="#">SKYR-15 | 2007/12/15</a></li>
+						<li><a href="#">PlusSky-16 | 2008/01/15</a></li>
+						<li><a href="#">PlusSky-17 | 2008/03/15</a></li>
+						<li><a href="#">PlusSky-18 | 2008/06/15</a></li>
+						<li><a href="#">PlusSky-19 | 2008/09/15</a></li>
+						<li><a href="#">PlusSky-20 | 2008/12/15</a></li>
+						<li><a href="#">PlusSky-21 | 2009/01/15</a></li>
+						<li><a href="#">PlusSky-22 | 2009/03/15</a></li>
+						<li><a href="#">PlusSky-23 | 2009/06/15</a></li>
+						<li><a href="#">PlusSky-24 | 2009/09/15</a></li>
+						<li><a href="#">PlusSky-25 | 2009/12/15</a></li>
+						<li><a href="#">PlusSky-26 | 2010/01/15</a></li>
+						<li><a href="#">PlusSky-27 | 2010/03/15</a></li>
+						<li><a href="#">PlusSky-28 | 2010/06/15</a></li>
+						<li><a href="#">PlusSky-29 | 2010/09/15</a></li>
+						<li><a href="#">PlusSky-30 | 2010/12/15</a></li>
+					</ul>
+				</aside>
+			</article>
+			<footer>
+				<p>Copyright 2022 by DeadGhost &copy;</p>
+			</footer>
+		</main>
+	</body>
+</html>
+
+<!-- var sss = document.getElementById(
+	"#mainarticle-content"
+).clientHeight;
+alert(sss);
+document.addEventListener("DOMContentLoaded", function (event) {
+	var sss = document.getElementById("#mainarticle-content");
+	console.log(sss.clientHeight);
+}); -->
+
+<!-- var mainContent_height = document
+.querySelector("#mainarticle-content")
+.getAttribute("height");
+console.log(mainContent_height); -->
+
+<!-- var aaa = document.querySelector("#mainarticle-content");
+var bbb = window.getComputedStyle(aaa, null).height;
+console.log(bbb); -->
+<!-- window.getComputedStyle(document.getElementById("frameId"), null).getPropertyValue("height")
+window.getComputedStyle(document.getElementById("frameId"), null).getPropertyCSSValue("height").cssText -->
+<!-- window.getComputedStyle(document.getElementById("11")).width
+ -->
+<!-- var height = document.getElementById('myID'). offsetHeight; -->
+<!-- window.addEventListener('resize', function(event){
+    var newWidth = window.innerWidth;
+    var newHeight = window.innerHeight; 
+}); -->
