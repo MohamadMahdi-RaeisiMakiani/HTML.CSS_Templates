@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>
+			RegisterForm
+		</title>
+		<meta charset="utf-8">
+		<style>
+			body{
+				background: url(./ax4.jpg) no-repeat center center fixed;
+				background-repeat: no-repeat;
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+			}
+			
+			input[type="text"]:hover, .parag1{
+				background-color: red;
+			}
+			.parag1{
+				font-size: 20px;
+				color: white;
+				text-align: center;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<form>
+			<fieldset>
+				<p style="font-size: 30px; color: red; text-align: center; background-color: white;">Welcome to the HTML Website Sign-up Form</p>
+				<p style="font-size: 20px; color: red; text-align: center;">Be sure you fill all * informations</p>
+				<p class="parag1">Pay attention to the website rules and then check the related box</p>
+				<legend align="center"> User Form</legend>
+				<label for="usr_nme">Username: *</label>
+				<input id="usr_nme" type="text" name="Getting_Username" placeholder="Enter Your Username" maxlength="7" required>
+				<br><br>
+				<label for="ps_wrd">Password: *</label>
+				<input id="ps_wrd" type="password" name="Getting_Password" value="12345" required>
+				<br><br>
+				<label for="usr_mil">Your E-Mail: *</label>
+				<input id="usr_mil" type="email" name="Getting_Mail" placeholder="...@info/gmail/yahoo.com" size="55" required autofocus>
+				<br><br>
+				<label for="usr_wbsit">Your Website: </label>
+				<input id="usr_wbsit" type="url" name="Getting_URL" value="https://www.MyHTMLWebsite.com/" size="35" readonly>
+				<br><br>
+				<label for="usr_nmbr">Count Number: </label>
+				<input id="usr_nmbr" type="number" name="Getting_Num">
+				<br><br>
+				<label for="usr_phne">Enter Your Phone: </label>
+				<input id="usr_phne" type="tel" name="Getting_Phone" placeholder="+989110212233">
+				<br><br>
+				<label for="fvrit_clr">Choose Color: </label>
+				<input id="fvrit_clr" type="color" name="Getting_Color">
+				<br><br>
+				<p>Select Your Gender: </p>
+				<label for="gndr_ml">Male </label>
+				<input id="gndr_ml" type="radio" name="gender_choosing" value="Male">
+				<label for="gndr_fml">Female </label>
+				<input id="gndr_fml" type="radio" name="gender_choosing" value="Female">
+				<br><br>
+				<label for="chkbx_1">Accept all policy and privacy </label>
+				<input id="chkbx_1" type="checkbox" name="Accept_Web_Rules" value="Rule_OK">
+				<br><br>
+				<label for="chkbx_2">I'm Human </label>
+				<input id="chkbx_2" type="checkbox" name="Human_Validation" value="Not_Machine" checked>
+				<br><br>
+				<p>Do you know this website users? How many of them?</p>
+				<span>10</span>
+				<input id="rng_1" type="range" name="nm_1" value="vl_1">
+				<span>40</span>
+				<br>
+				<span>Default range (10)</span>
+				<input id="rng_2" type="range" name="nm_2" value="vl_2" disabled>
+				<br><br>
+				<span>Select Your Profile</span>
+				<input id="fil_1" name="nm_fil" value="vl_fil" type="file">
+				<br><br>
+				<input id="submit_btn" type="submit" name="Check_Data" value="Finish">
+				<input id="reset_btn" type="reset" name="Clear_Data" value="Clear">
+				<input id="hlp_btn" name="hlp_btn_chsd" value="Help!" type="button" onclick="alert('We are going to help you')">
+				<br><br>
+				<label>Favorite Country</label>
+				<select name="Favorite_Country">
+					<optgroup label="Asia">
+						<option>Iran</option>
+						<option>China</option>
+						<option selected>Russia</option>
+						<option>Saudia Arabi</option>
+					</optgroup>
+					<optgroup label="Africa">
+						<option>Nigeria</option>
+						<option>Egypt</option>
+						<option>Ethiopia</option>
+						<option>DR Congo</option>
+					</optgroup>
+					<optgroup label="Europe">
+						<option>France</option>
+						<option>Germany</option>
+						<option>England</option>
+						<option>Finland</option>
+					</optgroup>
+				</select>
+				<br><br>
+				<label>Select Your Favorite Foods</label>
+				<br>
+				<select name="FavoriteFood" size="5" multiple>
+					<option>Pizza</option>
+					<option>Chicken</option>
+					<option>Burger</option>
+					<option>Fish and Chips</option>
+					<option>Lobster</option>
+				</select>
+				<br><br>
+				<p>Comment : </p>
+				<textarea placeholder="Anything you want to say ..."></textarea>
+				<br><br>
+				<a href="RegisterPage.html">Reset Page</a>
+			</fieldset>
+		</form>
+	</body>
+</html>
+
+<!--
+> Making form
+
+_____
+Tags |
+-----
+
+-form
+	+To make an user form
+-fieldset
+	+To seprate the form with a box
+-legend
+	+To write a title for fieldset
+-label
+	+To write a label for each input element and describe it.
+-input
+	+To get an input from user in many types(attribute) Liks:
+		#text, password, radio, submit, reset, button, tel, number, email, checkbox, file, range, url, color
+-textarea
+	+To write long text like comments
+-select
+	+To make a select box to choose options
+-option
+	+It should write in select tag or optgroup tag.
+-optgroup
+	+It should write in select tag.
+========================================
+___________
+Attributes |
+-----------
+
+-for (label)
+	+To make a relation between a label and an element (should be same as element id)
+-id (input)
+	+Each input element has a unique id
+-name (input)
+	+Set a name to an input element to be recognized in backend
+-type (input)
+	+Each input element has a type Like:
+		#text
+		#password
+		#radio
+		#submit
+		#reset
+		#button
+		#tel
+		#number
+		#email
+		#checkbox
+		#file
+		#range
+		#url
+		#color
+-value (input)
+	+Each input element can include a value as it showing name or default value.
+-required (input)
+	+User has to fill this input element
+-autofocus (input)
+	+When the page loaded, at first this input element will selected to fill.
+-readonly (input)
+	+User can't change the value of this input element.
+-disabled (input)
+	+User just see the value of this input element.
+-checked (input [checkbox type] )
+	+pre-selected check box.
+-placeholder (input)
+	+shadow text for text inputs.
+-size (input)
+	+To set a box size (text input box) or how many select box options show as 55 [px] or 5.
+-maxlength (input)
+	+Max characters user can write as 3 (Just 3 characters user can write.)
+-label (optgroup)
+	+Option groups name
+-selected (option)
+	+Default option selected when page loaded.
+-multiple (select)
+	+Multiple options can be selected.
+========================================
+
+-->
