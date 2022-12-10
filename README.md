@@ -9,3 +9,5 @@ Here I upload some simple web page templates that I created.
 *Template 3: Simple Personal Blog includes sky articles
 
 *Template 4: Simple HTML form template
+
+*Template 5: Simple Tour Website Template
