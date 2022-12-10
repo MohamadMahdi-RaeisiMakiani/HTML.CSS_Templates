@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<htm>
+	<head>
+		<title>TripToGo LoginForm</title>
+		<meta charset="utf-8" />
+		<script src="ScriptsAndStyles/register_script.js"></script>
+		<link rel="stylesheet" href="ScriptsAndStyles/main2.css" />
+	</head>
+	<body>
+		<header>
+			<p id="firstpara">TripToGo Login Form</p>
+		</header>
+		<section class="maincnt">
+			<form>
+				<div class="divtopbtn">
+					<input
+						id="frstbtni"
+						class="btn1"
+						type="button"
+						value="Login"
+						onclick="LoginFormShow()"
+					/>
+					<input
+						id="scndbtni"
+						class="btn1"
+						type="button"
+						value="Sign up"
+						onclick="RegisterFormShow()"
+					/>
+				</div>
+				<div id="frstmsgpg">
+					<p>
+						Please Select your command<br />
+						at the top<br />
+						(Sign up or Login)
+					</p>
+				</div>
+				<div id="middlepg">
+					<div class="divfrmlbls">
+						<label for="inptname1" class="lbls">Full name:</label>
+						<label for="inptuser1" class="lbls">Username:</label>
+						<label for="inptpass1" class="lbls">Password:</label>
+						<label for="inptpass11" class="lbls"
+							>Retype-Password:</label
+						>
+						<label for="inptemail1" class="lbls">E-Mail:</label>
+					</div>
+					<div class="divfrminpt">
+						<input
+							id="inptname1"
+							class="inptss"
+							type="text"
+							value="Enter Your Fullname"
+							name="sss"
+						/>
+						<input
+							id="inptuser1"
+							class="inptss"
+							type="text"
+							value="Enter Your Username"
+							required
+						/>
+						<input
+							id="inptpass1"
+							class="inptss"
+							type="password"
+							required
+						/>
+						<input
+							id="inptpass11"
+							class="inptss"
+							type="password"
+							required
+						/>
+						<input
+							id="inptemail1"
+							class="inptss"
+							type="email"
+							value="Enter Your Email"
+							required
+						/>
+					</div>
+				</div>
+				<div id="middlepg2">
+					<div class="divfrmlbls">
+						<label for="inptusrlgin" id="lblusrlgin" class="lbls"
+							>Username:</label
+						>
+						<label for="inptpass2" class="lbls">Password:</label>
+					</div>
+					<div class="divfrminpt">
+						<input
+							id="inptusrlgin"
+							class="inptss"
+							type="text"
+							value="Enter Your Username"
+							required
+						/>
+						<input
+							id="inptpass2"
+							class="inptss"
+							type="password"
+							required
+						/>
+					</div>
+				</div>
+				<div id="divfinalbtn">
+					<input id="submitbtn" type="submit" value="Register" />
+				</div>
+			</form>
+		</section>
+	</body>
+</htm>

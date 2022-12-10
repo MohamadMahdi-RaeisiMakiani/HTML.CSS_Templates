@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<!-- It's entered before any addresses -->
+		<!-- <base href=""> -->
+		<title>Trip Maps</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="ScriptsAndStyles/main3.css" />
+		<script type="text/javascript">
+			function sayHello() {
+				alert("HelloWorld!");
+			}
+		</script>
+	</head>
+	<body>
+		<!-- <img src="files_/image_10.jpg" alt="Image_1" /> -->
+		<!-- inline JS -->
+		<h1 id="head1" onclick="this.innerHTML='Blank'">Morad</h1>
+		<p>Sajjad is here.</p>
+		<p onclick="document.getElementById('time1').innerHTML = Date()">
+			Show Time
+		</p>
+		<p id="time1"></p>
+		<p onclick="sayHello()">Hello</p>
+		<p class="err1 pp1">Paragraph 1</p>
+		<p class="err1">Paragraph 2</p>
+		<p class="pp1">Paragraph 3</p>
+		<section id="tbsec">
+			<table
+				border="5"
+				summary="Students' Scores are here in this table."
+				align="center"
+				id="tbl1"
+				width="50%"
+			>
+				<caption>
+					Students Scores
+				</caption>
+				<thead>
+					<tr>
+						<th>StudentID</th>
+						<th>StudentName</th>
+						<th>StudentScore</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>Reza</td>
+						<td>18</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>Ali</td>
+						<td rowspan="2">20</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>Hamed</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="3">
+							The Average of Students scores in 19
+						</td>
+					</tr>
+				</tfoot>
+			</table>
+		</section>
+		<section id="prdcsec">
+			<div id="frstprdc">This is the Product 1</div>
+			<div id="secprdc">This is the Product 2</div>
+		</section>
+		<section id="product_container">
+			<div class="product">
+				<img src="files_/HTML5.png" width="200" alt="Image_1" />
+				<p>Product 01</p>
+				<a href="#product_container">Buy Pr.1</a>
+			</div>
+			<div class="product">
+				<span>Image</span>
+				<p>Product 02</p>
+				<a href="#product_container">Buy Pr.2</a>
+			</div>
+			<div class="product">
+				<span>Image</span>
+				<p>Product 03</p>
+				<a href="#product_container">Buy Pr.3</a>
+			</div>
+		</section>
+		<br /><br />
+		<section id="tblsec2">
+			<table align="center" border="2" id="tbl2" width="100%">
+				<!-- <thead> -->
+				<tr>
+					<th bgcolor="orange" class="tdsizing" colspan="2"></th>
+					<th bgcolor="deepskyblue" class="tdsizing" rowspan="2"></th>
+				</tr>
+				<!-- </thead> -->
+				<!-- <tbody> -->
+				<tr>
+					<td bgcolor="lightblue" class="tdsizing"></td>
+					<td bgcolor="blueviolet" class="tdsizing"></td>
+				</tr>
+				<!-- </tbody> -->
+				<!-- <tfoot> -->
+				<tr>
+					<td class="tdsizing" bgcolor="green"></td>
+					<td colspan="2" class="tdsizing" bgcolor="yellow"></td>
+				</tr>
+				<!-- </tfoot> -->
+			</table>
+		</section>
+		<section class="alone-textInput">
+			<label for="car-typeInput">CarType Selection</label>
+			<input id="car-typeInput" type="text" list="carModels" />
+			<datalist id="carModels">
+				<option value="Off-road"></option>
+				<option value="Sedan"></option>
+				<option value="Coupe"></option>
+				<option value="Cross-over"></option>
+			</datalist>
+		</section>
+		<hr />
+		<section>
+			<table class="tablecls1">
+				<tr class="menu-container1">
+					<td colspan="5">
+						<nav class="menu1">
+							<ul>
+								<li><a href="#">Home</a> &nbsp;&nbsp;</li>
+								<li><a href="#">About</a> &nbsp;&nbsp;</li>
+								<li><a href="#">Contact us</a> &nbsp;&nbsp;</li>
+								<li><a href="#">Gallery</a> &nbsp;&nbsp;</li>
+							</ul>
+						</nav>
+					</td>
+					<td colspan="5">
+						<input type="text" />
+						<button>Search</button>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="5">
+						<img
+							src="files_/image_15.jpg"
+							alt="Photo1"
+							width="100%"
+						/>
+					</td>
+					<td colspan="5">
+						<p>
+							Welcome to this <br /><strong>HTML5 Course</strong>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="10" class="category-title">
+						<h2 id="bestcrss1">Best Courses</h2>
+					</td>
+				</tr>
+				<tr class="all-bestcourses1">
+					<td colspan="2">
+						<figure>
+							<img src="files_/image_19.png" alt="Photo2" />
+							<figcaption>C++</figcaption>
+						</figure>
+					</td>
+					<td colspan="2">
+						<figure>
+							<img src="files_/image_22.jpg" alt="Photo2" />
+							<figcaption>Python</figcaption>
+						</figure>
+					</td>
+					<td colspan="2">
+						<figure>
+							<img src="files_/image_25.png" alt="Photo2" />
+							<figcaption>JavaScript</figcaption>
+						</figure>
+					</td>
+					<td colspan="2">
+						<figure>
+							<img src="files_/image_26.jpeg" alt="Photo2" />
+							<figcaption>React JS</figcaption>
+						</figure>
+					</td>
+					<td colspan="2">
+						<figure>
+							<img src="files_/image_27.png" alt="Photo2" />
+							<figcaption>Node JS</figcaption>
+						</figure>
+					</td>
+				</tr>
+				<tr class="allbuylinks1">
+					<td colspan="2">
+						<a href="#bestcrss1">Buy C++ Course</a>
+					</td>
+					<td colspan="2">
+						<a href="#bestcrss1">Buy Python Course</a>
+					</td>
+					<td colspan="2">
+						<a href="#bestcrss1">Buy JavaScript Course</a>
+					</td>
+					<td colspan="2">
+						<a href="#bestcrss1">Buy React JS Course</a>
+					</td>
+					<td colspan="2">
+						<a href="#bestcrss1">Buy Node JS Course</a>
+					</td>
+				</tr>
+			</table>
+		</section>
+	</body>
+</html>

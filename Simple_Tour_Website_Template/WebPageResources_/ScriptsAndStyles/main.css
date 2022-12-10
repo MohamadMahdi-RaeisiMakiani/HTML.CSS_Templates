@@ -1,0 +1,183 @@
+body {
+	background-color: #deb887;
+	/* height: 100%;
+	margin: 0px;
+	padding: 0px; */
+}
+
+.alltext {
+	padding-left: 2%;
+}
+
+#mydiv1 {
+	background-color: #f8cb58;
+	width: 100%;
+	height: 45px;
+	margin-bottom: 10px;
+}
+
+#hd1 {
+	color: black;
+	text-align: center;
+}
+
+.btnlinks {
+	background-color: #fce2a0;
+	text-align: center;
+	margin: 5px;
+	font-size: 18pt;
+	border: 1px solid black;
+	text-decoration: none;
+	padding: 0.5%;
+}
+
+#mydiv2 {
+	background-color: #775d1b;
+	text-align: center;
+	/* background-color: #99CD56; */
+	margin-right: 20%;
+	margin-left: 20%;
+}
+
+.btnlinks:visited {
+	color: black;
+	text-decoration: none;
+}
+
+.btnlinks:link {
+	color: black;
+	text-decoration: none;
+}
+
+.btnlinks:hover {
+	color: brown;
+}
+
+#menunav1 {
+	background-color: #775d1b;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+#sec1 {
+	width: 70%;
+	background-color: rgba(229, 255, 0, 0.555);
+	float: right;
+	height: 100%;
+	/* margin-left: 25px; */
+}
+
+#sec2 {
+	width: 29%;
+	background-color: white;
+	float: left;
+	height: 1670px;
+	/* text-align: justify; */
+	/* margin-right: 25px; */
+}
+
+#para1,
+#para3,
+#para4,
+#para5,
+#para6 {
+	font-size: 16pt;
+}
+
+/* #figpic1 {
+} */
+
+.imgall {
+	width: 100%;
+	height: 100%;
+}
+
+#divpic1,
+#divpic3,
+#divpic4 {
+	width: 380px;
+	height: 250px;
+	margin-left: 10px;
+	margin-right: auto;
+	border: 2px solid brown;
+}
+
+#figcap,
+#figcap2,
+#figcap3 {
+	text-align: center;
+	font-style: italic;
+}
+
+#para2 {
+	border: 2px solid brown;
+	font-size: 20pt;
+	margin-left: 20px;
+	margin-right: 20px;
+	text-align: center;
+}
+
+#hdng2 {
+	text-align: center;
+	text-decoration: underline;
+}
+
+#divpic2 {
+	width: 800px;
+	height: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 2px solid brown;
+}
+
+.btnlinks2 {
+	color: brown;
+	font-size: 14pt;
+}
+
+.btnlinks2:visited {
+	color: brown;
+	text-decoration: none;
+}
+
+.btnlinks2:link {
+	color: brown;
+	text-decoration: none;
+}
+
+.btnlinks2:hover {
+	color: blue;
+}
+
+#para7 {
+	font-size: 20pt;
+	margin-left: 20px;
+	margin-right: 20px;
+	text-align: center;
+	text-decoration: underline;
+	font-family: "verdana";
+}
+
+#para8 {
+	font-size: 18pt;
+	margin-left: 20px;
+	margin-right: 20px;
+	text-align: center;
+	/* text-decoration: underline; */
+	font-family: "verdana";
+}
+
+.benlinks {
+	display: block;
+	text-align: center;
+	margin: 20px;
+	color: black;
+	text-decoration: none;
+	font-size: 14pt;
+	border: 1px solid black;
+}
+
+.benlinks:hover {
+	background-color: #eeae0c;
+	transition-duration: 0.8s;
+}

@@ -1,0 +1,109 @@
+body {
+	background-color: #deb887;
+}
+
+#firstpara {
+	padding-top: 10px;
+	text-align: center;
+	font-size: 42px;
+	font-family: "Segoe UI";
+}
+
+.maincnt {
+	background-color: rgba(229, 255, 0, 0.555);
+	border: 3px solid brown;
+	width: 700px;
+	margin: 0 auto;
+	height: 440px;
+}
+
+.btn1 {
+	border: none;
+	background-color: #f8cb58;
+	width: 50%;
+	float: left;
+	height: 50px;
+	font-size: 20px;
+	font-family: "Verdana";
+}
+
+#frstbtni {
+	border-right: 2px solid brown;
+}
+
+.btn1:hover {
+	background-color: #fce2a0;
+	transition-duration: 0.7s;
+}
+
+.lbls {
+	display: block;
+	margin-bottom: 20px;
+	font-size: 16pt;
+	font-family: "Georgia";
+}
+
+.divfrmlbls {
+	/* background-color: brown; */
+	width: 200px;
+	float: left;
+	height: 210px;
+	padding-left: 150px;
+}
+
+.divtopbtn {
+	height: 50px;
+	border-bottom: 2px solid black;
+}
+
+.divfrminpt {
+	/* background-color: red; */
+	width: 50%;
+	float: right;
+	height: 210px;
+}
+
+.inptss {
+	display: block;
+	margin-bottom: 22px;
+	font-size: 12pt;
+}
+
+#middlepg {
+	margin-top: 45px;
+	display: none;
+}
+
+#middlepg2 {
+	margin-top: 45px;
+	display: none;
+}
+
+#lblusrlgin {
+	margin-top: 70px;
+}
+
+#divfinalbtn {
+	margin-top: 270px;
+	/* background-color: chartreuse; */
+	height: 50px;
+	text-align: center;
+}
+
+#submitbtn {
+	margin-top: 10px;
+	font-size: 14pt;
+	display: none;
+}
+
+#inptusrlgin {
+	margin-top: 70px;
+}
+
+#frstmsgpg {
+	color: black;
+	text-align: center;
+	font-size: 20pt;
+	display: block;
+	/* display: none; */
+}
